@@ -1,0 +1,81 @@
+body {
+    background: #f5c3c2;
+}
+
+.container {
+    margin: auto;
+    width: 21em;
+    height: 40em;
+    border: 5px solid grey;
+    border-radius: 30px;
+}
+
+.upper {
+    height: 78%;
+    background: transparent;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    display: flex;
+}
+
+.upper-left {
+    width: 80%;
+    background: transparent;
+    border-top-left-radius: 22px;
+}
+
+.upper-left .notification-count {
+    height: 65%;
+}
+
+.notification-count>div.notice {
+    width: 60%;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    border: 1px solid red;
+    /* line-height: 0; */
+}
+
+.notice>.digits {
+    font-size: 5em;
+    height: 70%;
+    margin: 40px;
+}
+
+.notice>.status {
+    height: 30%;
+    font-size: 2vw;
+}
+
+.upper-left .notification-list {
+    height: 35%;
+    border-top: 1px solid red;
+}
+
+.upper-right {
+    width: 20%;
+    background: rgb(252, 252, 192);
+    border-top-right-radius: 22px;
+}
+
+.lower {
+    height: 22%;
+    background: white;
+    border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    display: flex;
+}
+
+.lower-left {
+    border-bottom-left-radius: 22px;
+    background: rgb(213, 253, 138);
+    width: 50%;
+    height: 100%;
+}
+
+.lower-right {
+    border-bottom-right-radius: 22px;
+    width: 50%;
+    background: rgb(156, 239, 253);
+}
