@@ -19,6 +19,7 @@ body {
 }
 
 .upper-left {
+    box-sizing: border-box;
     width: 80%;
     background: transparent;
     border-top-left-radius: 22px;
@@ -28,19 +29,24 @@ body {
     height: 65%;
 }
 
-.notification-count>div.notice {
-    width: 60%;
+.left-margin {
     position: relative;
+    left: 10px;
+}
+
+.notification-count>div.notice {
+    position: relative;
+    width: 60%;
     top: 40px;
-    left: 20px;
-    border: 1px solid red;
-    /* line-height: 0; */
 }
 
 .notice>.digits {
     font-size: 5em;
     height: 70%;
-    margin: 40px;
+}
+
+.notice>p {
+    margin: 0px;
 }
 
 .notice>.status {
@@ -49,14 +55,43 @@ body {
 }
 
 .upper-left .notification-list {
+    box-sizing: border-box;
+    width: 100%;
     height: 35%;
-    border-top: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notification-list>.notification-list-item {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.notification-list-item .image {
+    width: 12%;
+    height: 90%;
+    border: 2.5px solid #272727;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.notification-list-item .notification-title {
+    width: 70%;
 }
 
 .upper-right {
+    position: relative;
     width: 20%;
     background: rgb(252, 252, 192);
     border-top-right-radius: 22px;
+}
+
+.upper-right .notification-un {
+    position: relative;
+    display: flex;
+    transform: rotate(90deg);
 }
 
 .lower {
@@ -74,8 +109,38 @@ body {
     height: 100%;
 }
 
+.lower .bottom-notify {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .lower-right {
+    position: relative;
     border-bottom-right-radius: 22px;
     width: 50%;
     background: rgb(156, 239, 253);
+}
+
+#bottom-right {
+    position: relative;
+    left: 25px;
+}
+
+#bottom-right::before {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    content: "+";
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #272727;
+    color: white;
+    font-weight: bold;
 }
