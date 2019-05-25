@@ -99,6 +99,10 @@ body {
     color: #fff;
 }
 
+.notification-list-item #pie {
+    background: #272727;
+}
+
 .notification-list-item .notification-title {
     width: 70%;
 }
